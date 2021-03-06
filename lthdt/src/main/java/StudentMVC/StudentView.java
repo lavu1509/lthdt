@@ -63,20 +63,45 @@ public class StudentView {
         System.out.println("---------------------");
     }
     //tim kiem sv theo so dien thoai
-    public void timSV(ArrayList<Student> students ){
-        int result = -1;
-        ArrayList<Student> list = new ArrayList<>();
-        System.out.println("Nhap sdt SV can tim: ");
+    
+//    public void timSV(ArrayList<Student> students ){
+//        int result = -1;
+//        ArrayList<Student> list = new ArrayList<>();
+//        System.out.println("Nhap sdt SV can tim: ");
+//        Scanner sc = new Scanner(System.in);
+//        String input = sc.nextLine();
+//        
+//        for(Student st:students){
+//            if(st.getPhone().equalsIgnoreCase(input)){
+//                hienthiSV(st);
+//                result++;
+//            }
+//        }
+//        if (result == -1){
+//            System.out.println("Khong tim thay SV");
+//        }  
+//    }
+    
+    //view nhap thong tin can tim
+    public String nhap_sdt_can_tim(){
+        System.out.println("+++++++++++++++++++++++");
         Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
-        
-        for(Student st:students){
-            if(st.getPhone().equalsIgnoreCase(input)){
-                hienthiSV(st);result++;
+        System.out.println("Nhap so dien thoai can tim kiem: ");
+        String sdt = sc.nextLine();
+        System.out.println("+++++++++++++++++++++++");
+        return sdt;
+    }
+    
+    //view in ket qua tim kiem
+    public void ket_qua_tim_kiem_sdt(ArrayList<Student> students){
+        System.out.println("+++++++++++++++++++++++");
+        if (students.isEmpty()){
+            System.out.println("Khong tim thay");
+        }else{
+            for(Student sv: students){
+                System.out.println(sv.toString());
             }
         }
-        if (result == -1){
-            System.out.println("Khong tim thay SV");
-        }  
+        System.out.println("+++++++++++++++++++++++");
     }
 }

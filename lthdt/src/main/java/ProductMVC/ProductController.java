@@ -52,4 +52,7 @@ public class ProductController {
     public void timkiemPro(){
         this.proview.timPro(pros);
     }
+    public void xoaPro(){
+        this.proview.deletePro();
+    }
 }
