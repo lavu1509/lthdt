@@ -21,7 +21,7 @@ public class Connecttosql {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        String url="jdbc:mysql://localhost:3306";
+        String url="jdbc:mysql://localhost:3306/sakila";
         String user = "root";
         String password = "qqq111";
         try(Connection conn =  DriverManager.getConnection(url, user, password)){
@@ -30,14 +30,15 @@ public class Connecttosql {
         }   catch (SQLException ex) {
             Logger.getLogger(Connecttosql.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        
 //        Connection conn = Connecttosql.getMyConnection();
 //        System.out.println("Get connection " + conn);
 //        System.out.println("Done!");
     }
-    public static Connection getMyConnection() throws SQLException, ClassNotFoundException {
-        return DataConnection.getConnection();
-
-    }
+    
+//    public static Connection getMyConnection() throws SQLException, ClassNotFoundException {
+//        return DataConnection.getConnection();
+//
+//    }
 
 }

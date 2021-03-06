@@ -22,15 +22,15 @@ public class DataConnection {
     private static String USER;
     private static String PASSWORD;
 
-    public static void main(String[] args) {
-        Connection c;
-        c = getConnection();
-        if (c == null) {
-            System.out.println("Loi");
-        } else {
-            System.out.println("Ket noi thanh cong");
-        }
-    }
+//    public static void main(String[] args) {
+//        Connection c;
+//        c = getConnection();
+//        if (c == null) {
+//            System.out.println("Loi");
+//        } else {
+//            System.out.println("Ket noi thanh cong");
+//        }
+//    }
 
     public static Connection getConnection() {
         con = null;
