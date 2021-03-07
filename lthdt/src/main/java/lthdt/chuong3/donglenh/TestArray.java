@@ -31,7 +31,7 @@ public class TestArray {
         }
 //        System.out.println("Mang vua nhap la:");System.out.println(Arrays.toString(a));
         for(int i=0; i<a.length;i++){
-            System.out.println(a[i]+" ");
+            System.out.print(a[i]+" ");
         }
         
     }

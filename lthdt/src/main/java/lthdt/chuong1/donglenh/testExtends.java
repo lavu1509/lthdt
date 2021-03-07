@@ -17,7 +17,7 @@ import java.util.Locale;
  *
  * @author Fox0fNight
  */
-public class Bai6 {
+public class testExtends {
 
     /**
      * @param args the command line arguments

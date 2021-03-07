@@ -22,15 +22,18 @@ public class testFileAndDirectory {
     public static void main(String[] args) {
         // TODO code application logic here
         FileAndDirectoryOperation fo = new FileAndDirectoryOperation();
-        File[] content = fo.getDirectoryContent("C:\\Users\\Admin\\Downloads\\Wordpress (cô Thảo)");
-//        System.out.println(fo.displayContent(content));
-        File[] thumuc = fo.getSubDirectories(content);
-        System.out.println("Danh sach thu muc con la:");
-        System.out.println(fo.displayContent(thumuc));
-        File[] taptin = fo.getFiles(content);
-        System.out.println("Danh sach thu muc con la:");
-        System.out.println(fo.displayContent(taptin));        
+        File[] content = fo.getDirectoryContent("F:\\Cambridge - Interchange Level 2");
         
+//        System.out.println(fo.displayContent(content));
+
+//        File[] thumuc = fo.getSubDirectories(content);
+//        System.out.println("Danh sach thu muc con la:");
+//        System.out.println(fo.displayContent(thumuc));
+//        File[] taptin = fo.getFiles(content);
+//        System.out.println("Danh sach thu muc con la:");
+//        System.out.println(fo.displayContent(taptin));        
+
+        fo.getContentRecursively("F:\\Cambridge - Interchange Level 2");
     }
     
 }

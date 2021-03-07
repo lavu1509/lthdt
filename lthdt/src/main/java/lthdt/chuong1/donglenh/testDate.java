@@ -14,7 +14,7 @@ import java.util.Locale;
  *
  * @author Fox0fNight
  */
-public class Bai5 {
+public class testDate {
     public static void main(String[] args) throws ParseException{
         SimpleDateFormat sd = new SimpleDateFormat("dd-MM-yyyy",Locale.ENGLISH);
         Date currentDate = new Date();
