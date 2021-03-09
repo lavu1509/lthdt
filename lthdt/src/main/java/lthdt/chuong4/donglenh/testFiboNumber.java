@@ -21,9 +21,9 @@ public class testFiboNumber {
         FibonacciNumber fb = new FibonacciNumber();
         System.out.println("So fibo cua n=15 la: "+fb.calcFibo(15));
         
-        for(int i=0;i<=20;i++){
-            System.out.println("  "+fb.calcFibo(i));
-        }
+//        for(int i=0;i<=20;i++){
+//            System.out.println("  "+fb.calcFibo(i));
+//        }
     }
     
 }
